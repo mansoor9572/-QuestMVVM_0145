@@ -1,6 +1,5 @@
 package com.example.meeting_8
 
-import com.example.meeting_8.model.Sisa
 import com.example.meeting_8.model.Siswa
 import org.junit.Test
 import org.junit.Assert.*
