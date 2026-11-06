@@ -5,34 +5,34 @@ An Android application built with Jetpack Compose implementing MVVM architecture
 ## Project Structure & Implementation Screenshots
 
 ### 1. Struktur Folder (Project Structure)
-- Package layout containing `model`, `view`, `viewmodel`, and `uicontroller`.
+![strukturfolder](screenshots/strukturfolder.png)
 
 ### 2. Model Siswa (`Siswa.kt`)
-- Data class storing student data (`nama`, `gender`, `alamat`).
+![Siswa](screenshots/Siswa.png)
 
 ### 3. DataJK (`DataJK.kt`)
-- Object mapping gender string resources (`laki`, `wanita`).
+![DataJK](screenshots/DataJK.png)
 
 ### 4. String Resources (`strings.xml`)
-- Application strings for form labels, headers, and buttons.
+![string](screenshots/string.png)
 
 ### 5. Dimension Resources (`dimens.xml`)
-- Padding and divider thickness dimensions.
+![dimens](screenshots/dimens.png)
 
-### 6. Dependencies (`build.gradle.kts` / `libs.versions.toml`)
-- Jetpack Compose BOM, ViewModel Compose, Lifecycle Compose, and Navigation Compose.
+### 6. Dependencies & Gradle (`gradle`)
+![gradle](screenshots/gradle.png)
 
 ### 7. SiswaViewModel (`SiswaViewModel.kt`)
-- StateFlow managing student state and update logic.
+![viewmodel](screenshots/viewmodel.png)
 
 ### 8. FormSiswa (`FormSiswa.kt`)
-- Input form screen with OutlinedTextField, RadioButton selection, and Submit button.
+![FormSiswa](screenshots/FormSiswa.kt.png)
 
 ### 9. TampilSiswa (`TampilSiswa.kt`)
-- Detail screen displaying submitted student information and Back button.
+![TampilSiswa](screenshots/TampilSiswa.kt.png)
 
 ### 10. Navigasi (`Navigasi.kt`)
-- Navigation graph controlling flow between Form and Detail screens.
+![Navigasi](screenshots/Navigasi.kt.png)
 
 ### 11. MainActivity (`MainActivity.kt`)
-- Host activity launching SiswaApp with Edge-to-Edge support.
+![MainActivity](screenshots/MainActivity.png)
