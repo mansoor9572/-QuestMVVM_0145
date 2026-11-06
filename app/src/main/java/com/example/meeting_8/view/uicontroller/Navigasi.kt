@@ -17,11 +17,17 @@ import com.example.meeting_8.view.FormSiswa
 import com.example.meeting_8.view.TampilSiswa
 import com.example.meeting_8.model.DataJK
 
+/**
+ * Navigation routes enum defining app screens.
+ */
 enum class Navigasi {
     Formulir,
     Detail
 }
 
+/**
+ * Main application composable handling navigation graph and ViewModel state.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SiswaApp(
@@ -56,6 +62,9 @@ fun SiswaApp(
     }
 }
 
+/**
+ * Helper function to pop back stack and return to formulir screen.
+ */
 private fun cancelAndBackToFormulir(
     navController: NavHostController
 ) {
