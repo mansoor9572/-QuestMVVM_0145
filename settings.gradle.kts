@@ -22,6 +22,6 @@ dependencyResolutionManagement {
     }
 }
 
+// Root project and module configuration
 rootProject.name = "meeting_8"
 include(":app")
- 
