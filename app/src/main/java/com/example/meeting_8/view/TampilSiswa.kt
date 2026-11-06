@@ -30,6 +30,7 @@ fun TampilSiswa(
     statusUiSiswa: Siswa,
     onBackButtonClicked:()-> Unit
 ){
+    // Mapped student details list for display
     val items = listOf(
         Pair(stringResource(R.string.nama), statusUiSiswa.nama),
         Pair(stringResource(id = R.string.gender), statusUiSiswa.gender),
@@ -38,6 +39,7 @@ fun TampilSiswa(
 
     Scaffold(modifier = Modifier,
         topBar = {
+            // Header TopAppBar
             TopAppBar(
                 title = { Text(stringResource(id = R.string.detail), color = Color.White) },
                 colors = TopAppBarDefaults.mediumTopAppBarColors(colorResource(id = R.color.purple_500)),
@@ -52,6 +54,7 @@ fun TampilSiswa(
                 modifier = Modifier.padding(dimensionResource(R.dimen.padding_medium)),
                 verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.padding_small))
             ) {
+                // Display each detail item
                 items.forEach { item ->
                     Column {
                         Text(item.first.uppercase(), fontSize = 16.sp)
@@ -60,6 +63,7 @@ fun TampilSiswa(
                     HorizontalDivider(thickness = dimensionResource(R.dimen.thickness_divider))
                 }
                 Spacer(modifier = Modifier.height(dimensionResource(R.dimen.padding_small)))
+                // Back Button
                 Button(
                     modifier = Modifier.fillMaxWidth(),
                     onClick = onBackButtonClicked
