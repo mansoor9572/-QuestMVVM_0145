@@ -41,6 +41,7 @@ fun FormSiswa(
     onSubmitButtonClicked:(MutableList<String>) -> Unit,
     modifier: Modifier = Modifier
 ){
+    // State variables for form inputs
     var txtNama by rememberSaveable { mutableStateOf("")}
     var txtAlamat by remember { mutableStateOf("")}
     var txtGender by remember { mutableStateOf("")}
@@ -59,6 +60,7 @@ fun FormSiswa(
             verticalArrangement = Arrangement.SpaceBetween,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            // Nama Lengkap Input Field
             OutlinedTextField(
                 value = txtNama,
                 singleLine = true,
@@ -76,6 +78,7 @@ fun FormSiswa(
                 thickness = dimensionResource(R.dimen.thickness_divider),
                 color = Color.Blue
             )
+            // Gender Selection Radio Buttons
             Row {
                 pilihanJK.forEach { item ->
                     Row(modifier = Modifier.selectable(
@@ -102,6 +105,7 @@ fun FormSiswa(
                 thickness = dimensionResource(R.dimen.thickness_divider),
                 color = Color.Blue
             )
+            // Alamat Lengkap Input Field
             OutlinedTextField(
                 value = txtAlamat,
                 singleLine = true,
@@ -113,6 +117,7 @@ fun FormSiswa(
                 }
             )
             Spacer(modifier = Modifier.height(20.dp))
+            // Submit Button
             Button(
                 modifier = Modifier.fillMaxWidth(),
                 enabled = txtAlamat.isNotEmpty(),
