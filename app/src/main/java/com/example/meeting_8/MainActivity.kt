@@ -11,6 +11,9 @@ import androidx.compose.ui.Modifier
 import com.example.meeting_8.ui.theme.Meeting_8Theme
 import com.example.meeting_8.view.uicontroller.SiswaApp
 
+/**
+ * Main entry point activity for the application.
+ */
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
